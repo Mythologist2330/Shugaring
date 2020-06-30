@@ -1,0 +1,129 @@
+.container{
+    max-width: 1590px;
+    height: 1127px;
+    padding-top: 15px;
+    margin-bottom: 200px;
+    outline: 1px solid #000;
+}
+
+.block-logo-info{
+    position: relative;
+    height: 156px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .text-logo{
+        width: 9vw;
+        margin: 0 8vw 0 3vw;
+    }
+    .text-map{
+        width: 13vw;
+        margin: 0 4vw 0 1vw;
+        .text-map-weight{
+            font-weight: 600;
+        }
+        .text-map-link{
+            line-height: 35px;
+            color: red;
+            border-bottom: 1px dashed red;
+            cursor: pointer;
+        }
+    }
+}
+
+.block-tel-and-work-time{
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    .tel{
+        position: relative;
+        top: 7px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .img-tel{
+            width: 65px;
+            height: 65px;
+        }
+        .text-tel{
+            width: 214px;
+            display: flex;
+            flex-direction: column;
+            .block-tel-call-us{
+                position: relative;
+                right: 5px;
+                display: flex;
+                flex-direction: row;
+                .green-point{
+                    width: 22px;
+                    height: 22px;
+                }
+                .tel-call-us{
+                    margin: 0;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+            .tel-number{
+                margin: 0;
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 20px;
+            }
+        }
+    }
+    .work-time{
+        position: relative;
+        bottom: 7px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .img-work-time{
+            width: 65px;
+            height: 65px;
+        }
+        .text-work-time{
+            margin: 0;
+            font-size: 20px;
+            .weight-text-work-time{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.block-writing-appointment{
+    width: 14vw;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.1);
+    &:active{
+        box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+    }
+    .writing-appointment{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    .text-writing-appointment{
+        
+    }
+}
+
+.my-main-nav-menu{
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+}
+
+.list-main-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
