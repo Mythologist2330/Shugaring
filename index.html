@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div class="btn block-writing-appointment">
+            <div class="btn block-writing-appointment" id="openPopup">
                 <img src="images/writing-appointment.png" class="writing-appointment">
                 <span class="text-writing-appointment">Записаться онлайн</span>
             </div>
@@ -88,5 +88,48 @@
         </nav>
     </div>
 
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <p class="receive-program"><span class="weight-receive-program">Получите</span> программу обучения</p>
+
+            <p class="additional-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aperiam beatae? Nesciunt quaerat soluta modi eligendi similique voluptates debitis.</p>
+
+            <form>
+                <div class="block-popup-inputs">
+                    <select class="popup-select popup-input">
+                        <option class="grey-select-item">[Выберите вариант]</option>
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                        <option>Пункт 3</option>
+                        <option>Пункт 4</option>
+                        <option>Пункт 5</option>
+                    </select>
+
+                    <input class="popup-input" type="text" placeholder="Ваше имя" maxlength="20" required>
+
+                    <input class="popup-input" type="tel" placeholder="Ваш номер телефона" maxlength="20" required>
+                </div>
+
+                <div class="block-popup-button-submit" id="popupButtonSubmit">
+                    <input class="popup-button-submit" type="image" src="images/popup-button-submit.png">
+                    
+                    <img src="images/flower-popup-button-submit.png" class="flower-popup-button-submit">
+                </div>
+            </form>
+
+            <img src="images/book-popup-form.png" class="img-book-popup-form">
+
+            <div class="close-popup"></div>
+        </div>
+
+        <div class="popup-complete" id="popupComplete">
+            <img src="images/check-mark.png" class="img-check-mark">
+
+            <p class="weight-text-complete">Ваш заказ принят.</p>
+            <p class="text-complete">Ожидайте звонка</p>
+
+            <div class="close-popup"></div>
+        </div>
+    </div>
 </body>
 </html>
