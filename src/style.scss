@@ -1,98 +1,141 @@
 .container{
     max-width: 1590px;
     height: 1127px;
-    padding-top: 15px;
-    margin-bottom: 200px;
+
+    margin: 200px auto;
     outline: 1px solid #000;
 }
 
 .block-logo-info{
     position: relative;
     height: 156px;
-    padding: 15px;
+    padding: 0 15px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    .text-logo{
-        width: 9vw;
-        margin: 0 7vw 0 3vw;
-    }
-    .text-map{
-        width: 13vw;
-        margin: 0 2vw 0 1vw;
-        .text-map-weight{
-            font-weight: 600;
+    .wrapper-logo{
+        width: 468px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        outline: 1px solid #000;
+        .text-logo{
+            width: 144px;
+            margin: 0;
+            font-size: 14px;
         }
-        .text-map-link{
-            line-height: 35px;
-            color: red;
-            border-bottom: 1px dashed red;
-            cursor: pointer;
+    }
+
+
+
+
+
+
+    .wrapper-info{
+        width: 923px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        outline: 1px solid #000;
+        .location-info{
+            width: 308px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .map{
+                width: 78px;
+                height: 78px;
+            }
+            .text-map{
+                width: 207px;
+                font-size: 16px;
+                .text-map-weight{
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+                .text-map-margin{
+                    margin-bottom: 17px;
+                }
+                .text-map-link{
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: red;
+                    border-bottom: 1px dashed #ff6666;
+                    cursor: pointer;
+                }
+            }
+        }
+        .block-tel-and-work-time{
+            width: 259px;
+            display: flex;
+            flex-direction: column;
+            .tel{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .img-tel{
+                    width: 35px;
+                    height: 35px;
+                }
+                .text-tel{
+                    width: 214px;
+                    display: flex;
+                    flex-direction: column;
+                    .block-tel-call-us{
+                        position: relative;
+                        right: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        .green-point{
+                            width: 6px;
+                            height: 6px;
+                        }
+                        .tel-call-us{
+                            margin: 0;
+                            font-size: 12px;
+                            font-weight: 600;
+                        }
+                    }
+                    .tel-number{
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 23px;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .work-time{
+                position: relative;
+                bottom: 7px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .img-work-time{
+                    width: 35px;
+                    height: 35px;
+                }
+                .text-work-time{
+                    margin: 0;
+                    font-size: 20px;
+                    .weight-text-work-time{
+                        font-weight: 600;
+                    }
+                }
+            }
         }
     }
 }
 
-.block-tel-and-work-time{
-    width: 16vw;
-    margin: 0 3vw 0 0;
-    display: flex;
-    flex-direction: column;
-    .tel{
-        position: relative;
-        top: 7px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        .img-tel{
-            width: 65px;
-            height: 65px;
-        }
-        .text-tel{
-            width: 214px;
-            display: flex;
-            flex-direction: column;
-            .block-tel-call-us{
-                position: relative;
-                right: 5px;
-                display: flex;
-                flex-direction: row;
-                .green-point{
-                    width: 22px;
-                    height: 22px;
-                }
-                .tel-call-us{
-                    margin: 0;
-                    font-size: 12px;
-                    font-weight: 600;
-                }
-            }
-            .tel-number{
-                margin: 0;
-                font-weight: 600;
-                font-size: 23px;
-                line-height: 20px;
-            }
-        }
-    }
-    .work-time{
-        position: relative;
-        bottom: 7px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        .img-work-time{
-            width: 65px;
-            height: 65px;
-        }
-        .text-work-time{
-            margin: 0;
-            font-size: 20px;
-            .weight-text-work-time{
-                font-weight: 600;
-            }
-        }
-    }
-}
+
 
 .block-writing-appointment{
     width: 14vw;
