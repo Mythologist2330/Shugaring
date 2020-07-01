@@ -20,36 +20,44 @@
 <body>
     <div class="container">
         <div class="block-logo-info">
-            <img src="images/logo.png" class="img-logo">
+            <div class="wrapper-logo">
+                <img src="images/logo.png" class="img-logo">
 
-            <p class="text-logo">Студия депиляции и массажный кабинет в Бресте</p>
+                <p class="text-logo">Студия депиляции и массажный кабинет в Бресте</p>
+            </div>
 
-            <img src="images/map.png" class="map">
-            <p class="text-map"><span class="text-map-weight">Мы находимся в центре:</span> г. Брест, ул. Гоголя, д.65 <span class="text-map-link">Смотреть на карте</span></p>
+            <div class="wrapper-info">
+                <div class="location-info">
+                    <img src="images/map.png" class="img-map">
 
-            <div class="block-tel-and-work-time">
-                <div class="tel">
-                    <img src="images/tel.png" class="img-tel">
-                    <div class="text-tel">
-                        <div class="block-tel-call-us">
-                            <img src="images/green-point.png" class="green-point">
-                            <p class="tel-call-us">Звоните, мы сейчас работаем</p>
+                    <p class="text-map"><span class="text-map-weight">Мы находимся в центре:</span> <span class="text-map-margin">г. Брест, ул. Гоголя, д.65</span> <span class="text-map-link">Смотреть на карте</span></p>
+                </div>
+
+                <div class="block-tel-and-work-time">
+                    <div class="tel">
+                        <img src="images/tel.png" class="img-tel">
+                        <div class="text-tel">
+                            <div class="block-tel-call-us">
+                                <img src="images/green-point.png" class="green-point">
+                                <p class="tel-call-us">Звоните, мы сейчас работаем</p>
+                            </div>
+                            <p class="tel-number">+375 33 382 24 99</p>
                         </div>
-                        <p class="tel-number">+375 33 382 24 99</p>
+                    </div>
+
+                    <div class="work-time">
+                        <img src="images/work-time.png" class="img-work-time">
+                        <p class="text-work-time">Пн-Вс <span class="weight-text-work-time">9:00-21:00</span></p>
                     </div>
                 </div>
 
-                <div class="work-time">
-                    <img src="images/work-time.png" class="img-work-time">
-                    <p class="text-work-time">Пн-Вс <span class="weight-text-work-time">9:00-21:00</span></p>
+                <div class="btn block-writing-appointment" id="openPopup">
+                    <img src="images/writing-appointment.png" class="writing-appointment">
+                    <span class="text-writing-appointment">Записаться онлайн</span>
                 </div>
             </div>
-
-            <div class="btn block-writing-appointment">
-                <img src="images/writing-appointment.png" class="writing-appointment">
-                <span class="text-writing-appointment">Записаться онлайн</span>
-            </div>
         </div>
+
 
 
         <nav class="my-main-nav-menu navbar navbar-expand-lg navbar-light bg-light">
@@ -88,5 +96,48 @@
         </nav>
     </div>
 
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <p class="receive-program"><span class="weight-receive-program">Получите</span> программу обучения</p>
+
+            <p class="additional-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, aperiam beatae? Nesciunt quaerat soluta modi eligendi similique voluptates debitis.</p>
+
+            <form>
+                <div class="block-popup-inputs">
+                    <select class="popup-select popup-input">
+                        <option class="grey-select-item">[Выберите вариант]</option>
+                        <option>Пункт 1</option>
+                        <option>Пункт 2</option>
+                        <option>Пункт 3</option>
+                        <option>Пункт 4</option>
+                        <option>Пункт 5</option>
+                    </select>
+
+                    <input class="popup-input" type="text" placeholder="Ваше имя" maxlength="20" required>
+
+                    <input class="popup-input" type="tel" placeholder="Ваш номер телефона" maxlength="20" required>
+                </div>
+
+                <div class="block-popup-button-submit" id="popupButtonSubmit">
+                    <input class="popup-button-submit" type="image" src="images/popup-button-submit.png">
+                    
+                    <img src="images/flower-popup-button-submit.png" class="flower-popup-button-submit">
+                </div>
+            </form>
+
+            <img src="images/book-popup-form.png" class="img-book-popup-form">
+
+            <div class="close-popup"></div>
+        </div>
+
+        <div class="popup-complete" id="popupComplete">
+            <img src="images/check-mark.png" class="img-check-mark">
+
+            <p class="weight-text-complete">Ваш заказ принят.</p>
+            <p class="text-complete">Ожидайте звонка</p>
+
+            <div class="close-popup"></div>
+        </div>
+    </div>
 </body>
 </html>
